@@ -1,7 +1,9 @@
 
 # PlexPy Docker Image
 
-[![](https://badge.imagelayers.io/webdestroya/plexpy:latest.svg)](https://imagelayers.io/?images=webdestroya/plexpy:latest 'Get your own badge on imagelayers.io')
+Thanks webdestroya
+
+[![](https://badge.imagelayers.io/webdestroya/plexpy:latest.svg)](https://imagelayers.io/?images=babim/plexpy:latest 'Get your own badge on imagelayers.io')
 
 This is a lightweight container that runs [PlexPy](https://github.com/drzoidberg33/plexpy), a web-based monitoring and tracking tool for Plex Media Server.
 
