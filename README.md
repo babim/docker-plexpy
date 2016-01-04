@@ -13,8 +13,8 @@ This is a lightweight container that runs [PlexPy](https://github.com/drzoidberg
 ```
 docker run -d --name plexpy \
   -p 8181:8181 \
-  -v /etc/docker/data:/data \
-  webdestroya/plexpy
+  -v /plexydata:/config \
+  babim/plexpy
 ```
 
 To update to the latest version of plexpy, just recreate the container.
