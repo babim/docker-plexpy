@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.1
+FROM gliderlabs/alpine
 
 MAINTAINER "Duc Anh Babim" <ducanh.babim@yahoo.com>
 
