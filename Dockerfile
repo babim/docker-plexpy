@@ -1,6 +1,4 @@
-FROM gliderlabs/alpine
-
-MAINTAINER "Duc Anh Babim" <ducanh.babim@yahoo.com>
+FROM babim/alpinebase
 
 RUN apk --update add \
       git \
