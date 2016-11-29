@@ -1,9 +1,8 @@
+[![](https://images.microbadger.com/badges/image/babim/plexpy.svg)](https://microbadger.com/images/babim/plexpy "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/plexpy.svg)](https://microbadger.com/images/babim/plexpy "Get your own version badge on microbadger.com")
 
 # PlexPy Docker Image
 
 Thanks webdestroya
-
-[![](https://badge.imagelayers.io/webdestroya/plexpy:latest.svg)](https://imagelayers.io/?images=babim/plexpy:latest 'Get your own badge on imagelayers.io')
 
 This is a lightweight container that runs [PlexPy](https://github.com/drzoidberg33/plexpy), a web-based monitoring and tracking tool for Plex Media Server.
 
