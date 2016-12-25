@@ -1,8 +1,13 @@
 FROM babim/alpinebase
 
-RUN apk --update add \
-      git \
-      python
+ENV UID=426 UNAME=plexpy GID=990 GNAME=media
+
+RUN addgroup -g $GID $GNAME \
+ && adduser -SH -u $UID -G $GNAME -s /usr/sbin/nologin $UNAME \
+ && apk add --no-cache git python \
+ && mkdir /plexpy && chown $UID:$GID /plexpy
+
+USER $UNAME
 
 RUN git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy
 
@@ -13,6 +18,3 @@ EXPOSE 8181
 WORKDIR /opt/plexpy
 
 CMD ["/usr/bin/python", "PlexPy.py", "--datadir=/config"]
-
-ENV LC_ALL en_US.UTF-8
-ENV TZ Asia/Ho_Chi_Minh
