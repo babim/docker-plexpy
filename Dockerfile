@@ -1,6 +1,6 @@
 FROM babim/alpinebase
 
-ENV UID=426 UNAME=plexpy GID=990 GNAME=media
+ENV UID=787 UNAME=plexpy GID=787 GNAME=plexpy
 
 RUN addgroup -g $GID $GNAME \
  && adduser -SH -u $UID -G $GNAME -s /usr/sbin/nologin $UNAME \
