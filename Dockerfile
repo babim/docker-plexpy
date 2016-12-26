@@ -5,7 +5,7 @@ ENV UID=787 UNAME=plexpy GID=787 GNAME=plexpy
 RUN addgroup -g $GID $GNAME \
  && adduser -SH -u $UID -G $GNAME -s /usr/sbin/nologin $UNAME \
  && apk add --no-cache git python \
- && mkdir -p /plexpy && chown $UID:$GID /plexpy
+ && mkdir /plexpy && chown $UID:$GID /plexpy
 
 USER $UNAME
 
